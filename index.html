@@ -105,14 +105,14 @@
       }
 
       function mergeFiles(files, callback) {
-        var count = files.length - 1;
+        var count = files.length;
         var mergedFile = [];
 
         if (!isSameDataType(files)) {
           alert("Sorry, when merging all files must be of same data type!");
         } else {
           console.log("X"+count);
-          for (var i = 0; i <= count; i++) {
+          for (var i = 0; i < count; i++) {
             console.log("Y"+i);
             mergeFile(files[i]);
           }
