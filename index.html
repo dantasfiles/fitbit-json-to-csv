@@ -97,7 +97,7 @@
               return function(e) {
                 var contents = e.target.result;
                 contents = JSON.parse(contents);
-                handleData(contents, fileName);
+                handleData(contents, theFile.name);
               };
             })(f);
 
